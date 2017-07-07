@@ -1,0 +1,189 @@
+.item {
+	cursor : pointer; 
+	cursor : hand;
+}
+
+
+.sidenav .nav-li a{
+	font-size:15px;
+	
+}
+
+div#measurement{
+	margin-top:-15px;
+	margin-bottom:25px;
+}
+
+div#measurement:change{
+	animation: fadein 2s;
+}
+
+@keyframes fadein{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+div#sucessMessage {
+	margin-left:20px;
+}
+
+.sidenav .nav-li{
+	list-style:none;
+	margin-left:-40px;
+	list-style-position:outside;
+}
+
+#close {
+	cursor : pointer; 
+	cursor : hand;
+}
+
+#userbar {
+	background-color:#585858;
+	display:block;
+	padding:20px;
+	margin-left:-10px;
+}
+
+#logout{
+	float:right;
+	background-color:lightslategrey;
+}
+
+footer {
+	float: bottom; 
+	border-top: 1px solid grey; 
+	margin-top: 40px;
+}
+
+.logo {
+	position:relative;
+	top:-30px;
+	right:-27px;
+	width:170px;
+	height:182px;
+	margin-bottom:-28px;
+}
+
+.module {
+	padding: 10px;
+}
+
+.showHide {
+	cursor:pointer;
+}
+
+.module-small{
+	display:inline-block;
+	padding:10px;
+	height:200px;
+	width:240px;
+	cursor:pointer;
+}
+
+.module_heading{
+	display:inline-block;
+}
+
+.module_close{
+	display:inline-block;
+	float:right;
+}
+
+#serving-adjuster{
+	display:inline-block;
+	float:right;
+	width:75px;
+}
+
+#measurement-table{
+	max-width:100%
+}
+
+#measurement-table td{
+	max-width:144px
+}
+
+#recipe-img{
+
+}
+
+#recipe-method{
+	float:left;
+	width:100%
+}
+
+/*Sets the width of the select box for container sized*/
+.container-size{ 
+	max-width:20%
+}
+
+input[type = "submit"]{
+	width:100%;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 250px; /* 100px width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #333; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:visited{
+	border-right: 5px green solid;
+}
+
+.sidenav a:active{
+	border-right: 5px green solid;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: white;
+	background-color: grey;
+}
+
+/* Position and style the close button (top right corner) */
+#navbars .menu {
+    font-size: 36px;
+	cursor:pointer;
+	padding-left:10px;
+}
+
+#navbars{
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#pageContent {
+	margin-left: 250px;
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 600px){
+	 .sidenav {width:0px;}
+	 #pageContent {margin-left:0px;}
+}
